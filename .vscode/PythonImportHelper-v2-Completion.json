@@ -1,0 +1,823 @@
+[
+    {
+        "label": "warnings",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "warnings",
+        "description": "warnings",
+        "detail": "warnings",
+        "documentation": {}
+    },
+    {
+        "label": "management",
+        "importPath": "django.core",
+        "description": "django.core",
+        "isExtraImport": true,
+        "detail": "django.core",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "messages",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "TokenObtainPairView",
+        "importPath": "rest_framework_simplejwt.views",
+        "description": "rest_framework_simplejwt.views",
+        "isExtraImport": true,
+        "detail": "rest_framework_simplejwt.views",
+        "documentation": {}
+    },
+    {
+        "label": "TokenRefreshView",
+        "importPath": "rest_framework_simplejwt.views",
+        "description": "rest_framework_simplejwt.views",
+        "isExtraImport": true,
+        "detail": "rest_framework_simplejwt.views",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "webusers.models",
+        "description": "webusers.models",
+        "isExtraImport": true,
+        "detail": "webusers.models",
+        "documentation": {}
+    },
+    {
+        "label": "routers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "viewsets",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "permissions",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "IsAuthenticated",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "get_user_model",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "authenticate",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "login",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "logout",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "get_wsgi_application",
+        "importPath": "django.core.wsgi",
+        "description": "django.core.wsgi",
+        "isExtraImport": true,
+        "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "django.contrib.auth.models",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "AbstractUser",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "django.contrib.auth.validators",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.contrib.auth.validators",
+        "description": "django.contrib.auth.validators",
+        "detail": "django.contrib.auth.validators",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "IntegrityError",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "django.utils.timezone",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.utils.timezone",
+        "description": "django.utils.timezone",
+        "detail": "django.utils.timezone",
+        "documentation": {}
+    },
+    {
+        "label": "localflavor.br.models",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "localflavor.br.models",
+        "description": "localflavor.br.models",
+        "detail": "localflavor.br.models",
+        "documentation": {}
+    },
+    {
+        "label": "BRCPFField",
+        "importPath": "localflavor.br.models",
+        "description": "localflavor.br.models",
+        "isExtraImport": true,
+        "detail": "localflavor.br.models",
+        "documentation": {}
+    },
+    {
+        "label": "BRCNPJField",
+        "importPath": "localflavor.br.models",
+        "description": "localflavor.br.models",
+        "isExtraImport": true,
+        "detail": "localflavor.br.models",
+        "documentation": {}
+    },
+    {
+        "label": "BRPostalCodeField",
+        "importPath": "localflavor.br.models",
+        "description": "localflavor.br.models",
+        "isExtraImport": true,
+        "detail": "localflavor.br.models",
+        "documentation": {}
+    },
+    {
+        "label": "BRStateField",
+        "importPath": "localflavor.br.models",
+        "description": "localflavor.br.models",
+        "isExtraImport": true,
+        "detail": "localflavor.br.models",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AbstractSet",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "ugettext_lazy",
+        "importPath": "django.utils.translation",
+        "description": "django.utils.translation",
+        "isExtraImport": true,
+        "detail": "django.utils.translation",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "ErrorList",
+        "importPath": "django.forms.utils",
+        "description": "django.forms.utils",
+        "isExtraImport": true,
+        "detail": "django.forms.utils",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "UserCreationForm",
+        "importPath": "django.contrib.auth.forms",
+        "description": "django.contrib.auth.forms",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.forms",
+        "documentation": {}
+    },
+    {
+        "label": "PasswordChangeForm",
+        "importPath": "django.contrib.auth.forms",
+        "description": "django.contrib.auth.forms",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.forms",
+        "documentation": {}
+    },
+    {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "ModelForm",
+        "importPath": "django.forms",
+        "description": "django.forms",
+        "isExtraImport": true,
+        "detail": "django.forms",
+        "documentation": {}
+    },
+    {
+        "label": "UpdateView",
+        "importPath": "django.views.generic.edit",
+        "description": "django.views.generic.edit",
+        "isExtraImport": true,
+        "detail": "django.views.generic.edit",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "PasswordChangeView",
+        "importPath": "django.contrib.auth.views",
+        "description": "django.contrib.auth.views",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.views",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "websys.settings",
+        "description": "websys.settings",
+        "peekOfCode": "BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = os.environ.get('SECRET_KEY')\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = os.environ.get('DEBUG')\nALLOWED_HOSTS = []\nAUTH_USER_MODEL = 'webusers.User'\n# Application definition",
+        "detail": "websys.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "websys.settings",
+        "description": "websys.settings",
+        "peekOfCode": "SECRET_KEY = os.environ.get('SECRET_KEY')\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = os.environ.get('DEBUG')\nALLOWED_HOSTS = []\nAUTH_USER_MODEL = 'webusers.User'\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',",
+        "detail": "websys.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "websys.settings",
+        "description": "websys.settings",
+        "peekOfCode": "DEBUG = os.environ.get('DEBUG')\nALLOWED_HOSTS = []\nAUTH_USER_MODEL = 'webusers.User'\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',",
+        "detail": "websys.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_HOSTS",
+        "kind": 5,
+        "importPath": "websys.settings",
+        "description": "websys.settings",
+        "peekOfCode": "ALLOWED_HOSTS = []\nAUTH_USER_MODEL = 'webusers.User'\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "detail": "websys.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_USER_MODEL",
+        "kind": 5,
+        "importPath": "websys.settings",
+        "description": "websys.settings",
+        "peekOfCode": "AUTH_USER_MODEL = 'webusers.User'\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'localflavor',",
+        "detail": "websys.settings",
+        "documentation": {}
+    },
+    {
+        "label": "INSTALLED_APPS",
+        "kind": 5,
+        "importPath": "websys.settings",
+        "description": "websys.settings",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'localflavor',\n    'webusers',\n    'rest_framework_simplejwt',",
+        "detail": "websys.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MIDDLEWARE",
+        "kind": 5,
+        "importPath": "websys.settings",
+        "description": "websys.settings",
+        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'corsheaders.middleware.CorsMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]",
+        "detail": "websys.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_URLCONF",
+        "kind": 5,
+        "importPath": "websys.settings",
+        "description": "websys.settings",
+        "peekOfCode": "ROOT_URLCONF = 'websys.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',",
+        "detail": "websys.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TEMPLATES",
+        "kind": 5,
+        "importPath": "websys.settings",
+        "description": "websys.settings",
+        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
+        "detail": "websys.settings",
+        "documentation": {}
+    },
+    {
+        "label": "WSGI_APPLICATION",
+        "kind": 5,
+        "importPath": "websys.settings",
+        "description": "websys.settings",
+        "peekOfCode": "WSGI_APPLICATION = 'websys.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/2.2/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),\n    }\n}\nfrom datetime import timedelta",
+        "detail": "websys.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "kind": 5,
+        "importPath": "websys.settings",
+        "description": "websys.settings",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),\n    }\n}\nfrom datetime import timedelta\nSIMPLE_JWT = {\n    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=480),\n    'REFRESH_TOKEN_LIFETIME': timedelta(days=1),",
+        "detail": "websys.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SIMPLE_JWT",
+        "kind": 5,
+        "importPath": "websys.settings",
+        "description": "websys.settings",
+        "peekOfCode": "SIMPLE_JWT = {\n    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=480),\n    'REFRESH_TOKEN_LIFETIME': timedelta(days=1),\n    'ROTATE_REFRESH_TOKENS': False,\n    'BLACKLIST_AFTER_ROTATION': True,\n    'UPDATE_LAST_LOGIN': False,\n    'ALGORITHM': 'HS256',\n    'SIGNING_KEY': SECRET_KEY,\n    'VERIFYING_KEY': None,\n    'AUDIENCE': None,",
+        "detail": "websys.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_PASSWORD_VALIDATORS",
+        "kind": 5,
+        "importPath": "websys.settings",
+        "description": "websys.settings",
+        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',\n    },",
+        "detail": "websys.settings",
+        "documentation": {}
+    },
+    {
+        "label": "REST_FRAMEWORK",
+        "kind": 5,
+        "importPath": "websys.settings",
+        "description": "websys.settings",
+        "peekOfCode": "REST_FRAMEWORK = {\n'DEFAULT_AUTHENTICATION_CLASSES': [\n      'rest_framework_simplejwt.authentication.JWTAuthentication',\n    ]\n}\nCORS_ALLOWED_ORIGINS = [\n    \"http://localhost:3000\"\n]\n# Internationalization\n# https://docs.djangoproject.com/en/2.2/topics/i18n/",
+        "detail": "websys.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CORS_ALLOWED_ORIGINS",
+        "kind": 5,
+        "importPath": "websys.settings",
+        "description": "websys.settings",
+        "peekOfCode": "CORS_ALLOWED_ORIGINS = [\n    \"http://localhost:3000\"\n]\n# Internationalization\n# https://docs.djangoproject.com/en/2.2/topics/i18n/\nLANGUAGE_CODE = 'pt-br'\nLOCALE_NAME = 'pt_BR'\nTIME_ZONE = 'America/Sao_Paulo'\nUSE_I18N = True\nUSE_L10N = True",
+        "detail": "websys.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_CODE",
+        "kind": 5,
+        "importPath": "websys.settings",
+        "description": "websys.settings",
+        "peekOfCode": "LANGUAGE_CODE = 'pt-br'\nLOCALE_NAME = 'pt_BR'\nTIME_ZONE = 'America/Sao_Paulo'\nUSE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/2.2/howto/static-files/\nSTATIC_URL = '/static/'",
+        "detail": "websys.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LOCALE_NAME",
+        "kind": 5,
+        "importPath": "websys.settings",
+        "description": "websys.settings",
+        "peekOfCode": "LOCALE_NAME = 'pt_BR'\nTIME_ZONE = 'America/Sao_Paulo'\nUSE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/2.2/howto/static-files/\nSTATIC_URL = '/static/'",
+        "detail": "websys.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TIME_ZONE",
+        "kind": 5,
+        "importPath": "websys.settings",
+        "description": "websys.settings",
+        "peekOfCode": "TIME_ZONE = 'America/Sao_Paulo'\nUSE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/2.2/howto/static-files/\nSTATIC_URL = '/static/'",
+        "detail": "websys.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_I18N",
+        "kind": 5,
+        "importPath": "websys.settings",
+        "description": "websys.settings",
+        "peekOfCode": "USE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/2.2/howto/static-files/\nSTATIC_URL = '/static/'",
+        "detail": "websys.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_L10N",
+        "kind": 5,
+        "importPath": "websys.settings",
+        "description": "websys.settings",
+        "peekOfCode": "USE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/2.2/howto/static-files/\nSTATIC_URL = '/static/'",
+        "detail": "websys.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_TZ",
+        "kind": 5,
+        "importPath": "websys.settings",
+        "description": "websys.settings",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/2.2/howto/static-files/\nSTATIC_URL = '/static/'",
+        "detail": "websys.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "websys.settings",
+        "description": "websys.settings",
+        "peekOfCode": "STATIC_URL = '/static/'",
+        "detail": "websys.settings",
+        "documentation": {}
+    },
+    {
+        "label": "UserSerializer",
+        "kind": 6,
+        "importPath": "websys.urls",
+        "description": "websys.urls",
+        "peekOfCode": "class UserSerializer(serializers.ModelSerializer):\n    password = serializers.CharField(write_only=True)\n    country = serializers.CharField(allow_blank=True, required=False)\n    state = serializers.CharField(allow_blank=True, required=False)\n    city = serializers.CharField(allow_blank=True, required=False)\n    street = serializers.CharField(allow_blank=True, required=False)\n    def create(self, validated_data):\n        print(validated_data)\n        user = UserModel.objects.create_user(\n            name=validated_data['name'],",
+        "detail": "websys.urls",
+        "documentation": {}
+    },
+    {
+        "label": "UserViewSet",
+        "kind": 6,
+        "importPath": "websys.urls",
+        "description": "websys.urls",
+        "peekOfCode": "class UserViewSet(viewsets.ModelViewSet):\n    def get_permissions(self):\n        if self.request.method == 'POST':\n            self.permission_classes = (permissions.AllowAny,)\n        else:\n            self.permission_classes = (IsAuthenticated,)\n        return super(UserViewSet, self).get_permissions()\n    queryset = User.objects.all()\n    serializer_class = UserSerializer\n# Routers provide an easy way of automatically determining the URL conf.",
+        "detail": "websys.urls",
+        "documentation": {}
+    },
+    {
+        "label": "UserModel",
+        "kind": 5,
+        "importPath": "websys.urls",
+        "description": "websys.urls",
+        "peekOfCode": "UserModel = get_user_model()\nclass UserSerializer(serializers.ModelSerializer):\n    password = serializers.CharField(write_only=True)\n    country = serializers.CharField(allow_blank=True, required=False)\n    state = serializers.CharField(allow_blank=True, required=False)\n    city = serializers.CharField(allow_blank=True, required=False)\n    street = serializers.CharField(allow_blank=True, required=False)\n    def create(self, validated_data):\n        print(validated_data)\n        user = UserModel.objects.create_user(",
+        "detail": "websys.urls",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "websys.urls",
+        "description": "websys.urls",
+        "peekOfCode": "router = routers.DefaultRouter()\nrouter.register(r'users', UserViewSet)\nurlpatterns = [\n    path('admin/', admin.site.urls),\n    path('', include('webusers.urls')),\n    path('api/', include(router.urls)),\n    path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),\n    path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),\n    path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))\n]",
+        "detail": "websys.urls",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "websys.urls",
+        "description": "websys.urls",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('', include('webusers.urls')),\n    path('api/', include(router.urls)),\n    path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),\n    path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),\n    path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))\n]",
+        "detail": "websys.urls",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "websys.wsgi",
+        "description": "websys.wsgi",
+        "peekOfCode": "application = get_wsgi_application()",
+        "detail": "websys.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "webusers.migrations.0001_initial",
+        "description": "webusers.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        ('auth', '0012_alter_user_first_name_max_length'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='User',\n            fields=[\n                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
+        "detail": "webusers.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "WebusersConfig",
+        "kind": 6,
+        "importPath": "webusers.apps",
+        "description": "webusers.apps",
+        "peekOfCode": "class WebusersConfig(AppConfig):\n    name = 'webusers'",
+        "detail": "webusers.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Address",
+        "kind": 6,
+        "importPath": "webusers.models",
+        "description": "webusers.models",
+        "peekOfCode": "class Address(models.Model):\n    country = models.CharField(_(\"País\"), blank=True, null=True,  max_length=254)\n    state = models.CharField(_(\"Estado\"), blank=True, null=True,  max_length=254)\n    city = models.CharField(_(\"Município\"), blank=True, null=True,  max_length=254)\n    zipcode = BRPostalCodeField(_(\"CEP\"), blank=True, max_length=254, null=True)\n    street = models.CharField(_(\"Rua\"), blank=True, null=True, max_length=10000)\n    number = models.IntegerField(_(\"Número\"), blank=True, null=True)\n    reference = models.CharField(_(\"Complemento\"),  blank=True, null=True, max_length=10000)\n'''\nclass User(AbstractUser):",
+        "detail": "webusers.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 6,
+        "importPath": "webusers.models",
+        "description": "webusers.models",
+        "peekOfCode": "class User(AbstractUser):\n    name = models.CharField(_(\"Nome\"), max_length=254)\n    identity = BRCPFField(_(\"CPF\"))\n    email = models.EmailField(max_length=254, unique=True)\n    pis = models.CharField(_(\"PIS\"), blank=True, default='', max_length=254)\n    country = models.CharField(_(\"País\"), blank=True, default='', max_length=254)\n    state = models.CharField(_(\"Estado\"), blank=True, default='',  max_length=254)\n    city = models.CharField(_(\"Município\"), blank=True, default='',  max_length=254)\n    zipcode = BRPostalCodeField(_(\"CEP\"), blank=True, max_length=254, null=True)\n    street = models.CharField(_(\"Rua\"), blank=True, default='', max_length=10000)",
+        "detail": "webusers.models",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "webusers.urls",
+        "description": "webusers.urls",
+        "peekOfCode": "urlpatterns = [\n    path(\"\", views.index, name=\"index\"),\n    path(\"cadastro\", views.register, name=\"register\"),\n    path(\"login\", views.login_view, name=\"login\"),\n    path(\"logout\", views.logout_view, name=\"logout\"),\n    path(\"delete\", views.delete_account, name=\"delete\"),\n    path(\"profile\", views.UserUpdateView.as_view(), name=\"mydata\"),\n    path(\"profile/credencial\", views.UpdatePassword.as_view(), name=\"passupdate\"),\n]",
+        "detail": "webusers.urls",
+        "documentation": {}
+    },
+    {
+        "label": "UserForm",
+        "kind": 6,
+        "importPath": "webusers.views",
+        "description": "webusers.views",
+        "peekOfCode": "class UserForm(forms.ModelForm):\n    fields = [\n        \"name\",\n        \"email\",\n        \"identity\",\n        \"country\",\n        \"state\",\n        \"city\",\n        'street',\n        \"number\"",
+        "detail": "webusers.views",
+        "documentation": {}
+    },
+    {
+        "label": "CustomPassword",
+        "kind": 6,
+        "importPath": "webusers.views",
+        "description": "webusers.views",
+        "peekOfCode": "class CustomPassword(PasswordChangeForm):\n    def __init__(self, *args, **kwargs):\n        super(CustomPassword, self).__init__(*args, **kwargs)\n        for visible in self.visible_fields():\n            visible.field.widget.attrs['class'] = 'form-control'\nclass UpdatePassword(PasswordChangeView):\n    form_class = CustomPassword\n    success_url = '/'\n    template_name = 'webusers/update_password.html'\nclass UserUpdateView(UpdateView):",
+        "detail": "webusers.views",
+        "documentation": {}
+    },
+    {
+        "label": "UpdatePassword",
+        "kind": 6,
+        "importPath": "webusers.views",
+        "description": "webusers.views",
+        "peekOfCode": "class UpdatePassword(PasswordChangeView):\n    form_class = CustomPassword\n    success_url = '/'\n    template_name = 'webusers/update_password.html'\nclass UserUpdateView(UpdateView):\n    model = User\n    form_class = UserForm\n    template_name_suffix = '_update_form'\n    success_url =\"/\"\n    def get_object(self):",
+        "detail": "webusers.views",
+        "documentation": {}
+    },
+    {
+        "label": "UserUpdateView",
+        "kind": 6,
+        "importPath": "webusers.views",
+        "description": "webusers.views",
+        "peekOfCode": "class UserUpdateView(UpdateView):\n    model = User\n    form_class = UserForm\n    template_name_suffix = '_update_form'\n    success_url =\"/\"\n    def get_object(self):\n        return User.objects.get(pk=self.request.user.id) # or request.POST\nclass RegisterForm(forms.ModelForm):\n    address = forms.CharField(widget = forms.HiddenInput(), required = False)\n    password = forms.CharField(widget=forms.PasswordInput)",
+        "detail": "webusers.views",
+        "documentation": {}
+    },
+    {
+        "label": "RegisterForm",
+        "kind": 6,
+        "importPath": "webusers.views",
+        "description": "webusers.views",
+        "peekOfCode": "class RegisterForm(forms.ModelForm):\n    address = forms.CharField(widget = forms.HiddenInput(), required = False)\n    password = forms.CharField(widget=forms.PasswordInput)\n    reference = forms.CharField(required=False)\n    date_joined = forms.CharField(widget = forms.HiddenInput(), required = False)\n    username = forms.CharField(widget = forms.HiddenInput(), required = False)\n    password = forms.CharField(widget = forms.HiddenInput(), required = False)\n    def __init__(self, *args, **kwargs):\n        super(UserForm, self).__init__(*args, **kwargs)\n        for visible in self.visible_fields():",
+        "detail": "webusers.views",
+        "documentation": {}
+    },
+    {
+        "label": "register",
+        "kind": 2,
+        "importPath": "webusers.views",
+        "description": "webusers.views",
+        "peekOfCode": "def register(request):\n    if  request.method == 'POST':\n        try:\n            userform = UserForm(request.POST)\n            errors = userform.errors.as_json()\n            errors = json.loads(errors)\n            for message in errors:\n                print(message)\n                messages.add_message(request, messages.INFO, message + ': '+ errors[message][0]['message'])\n            if not errors:",
+        "detail": "webusers.views",
+        "documentation": {}
+    },
+    {
+        "label": "login_view",
+        "kind": 2,
+        "importPath": "webusers.views",
+        "description": "webusers.views",
+        "peekOfCode": "def login_view(request):\n    if request.method == \"POST\":\n        # Attempt to sign user in\n        username = request.POST[\"email\"]\n        password = request.POST[\"password\"]\n        print(password)\n        user = authenticate(request, username=username, password=password)\n        # Check if authentication successful\n        if user is not None:\n            login(request, user)",
+        "detail": "webusers.views",
+        "documentation": {}
+    },
+    {
+        "label": "logout_view",
+        "kind": 2,
+        "importPath": "webusers.views",
+        "description": "webusers.views",
+        "peekOfCode": "def logout_view(request):\n    logout(request)\n    return redirect(\"index\")\ndef index(request):\n    return render(request, \"index.html\")\ndef delete_account(request):\n    current_user = request.user\n    userid = current_user.id\n    user = User.objects.get(pk=userid)\n    user.delete()",
+        "detail": "webusers.views",
+        "documentation": {}
+    },
+    {
+        "label": "index",
+        "kind": 2,
+        "importPath": "webusers.views",
+        "description": "webusers.views",
+        "peekOfCode": "def index(request):\n    return render(request, \"index.html\")\ndef delete_account(request):\n    current_user = request.user\n    userid = current_user.id\n    user = User.objects.get(pk=userid)\n    user.delete()\n    messages.success(request, 'Perfil removido com sucesso.')\n    return redirect('index')\ndef mydata(request):",
+        "detail": "webusers.views",
+        "documentation": {}
+    },
+    {
+        "label": "delete_account",
+        "kind": 2,
+        "importPath": "webusers.views",
+        "description": "webusers.views",
+        "peekOfCode": "def delete_account(request):\n    current_user = request.user\n    userid = current_user.id\n    user = User.objects.get(pk=userid)\n    user.delete()\n    messages.success(request, 'Perfil removido com sucesso.')\n    return redirect('index')\ndef mydata(request):\n    current_user = request.user\n    userid = current_user.id",
+        "detail": "webusers.views",
+        "documentation": {}
+    },
+    {
+        "label": "mydata",
+        "kind": 2,
+        "importPath": "webusers.views",
+        "description": "webusers.views",
+        "peekOfCode": "def mydata(request):\n    current_user = request.user\n    userid = current_user.id\n    print(userid)\n    user = None\n    if not userid:\n        return redirect('index')\n    if User.objects.filter(pk=userid).exists():\n        print('Exists')\n        user = User.objects.get(pk=userid)",
+        "detail": "webusers.views",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "manage",
+        "description": "manage",
+        "peekOfCode": "def main():\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'websys.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"\n        ) from exc",
+        "detail": "manage",
+        "documentation": {}
+    }
+]

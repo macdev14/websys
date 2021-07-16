@@ -1,0 +1,30 @@
+{% extends 'layout.html' %}
+{% block title %} Início {%endblock%}
+{% block body %}
+{% if user.is_authenticated %}
+Olá <strong>{{ user.name }}</strong>.
+{% else %}
+<h2>
+    Olá visitante.
+</h2>
+<br>
+<br>
+<h4>
+    Login
+</h4>
+<br>
+<form action="{% url 'login' %}" method="post">
+    {% csrf_token %}
+    <div class="form-group">
+        <input autofocus class="form-control" type="text" name="email" placeholder="Email">
+    </div>
+    <div class="form-group">
+        <input class="form-control" type="password" name="password" placeholder="Password">
+    </div>
+    <input class="btn btn-primary" type="submit" value="Login">
+</form>
+<p>
+    Não possui uma conta? <a href="{% url 'register' %}">Cadastre-se aqui.</a>
+</p>
+{% endif %}
+{% endblock %}

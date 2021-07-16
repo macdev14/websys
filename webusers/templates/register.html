@@ -1,0 +1,50 @@
+{% extends 'layout.html' %}
+{% block title %} Cadastro {%endblock%}
+{% block body %}
+
+<form action="{% url 'register' %}" method="post">
+    {% csrf_token %}
+    <div class="form-group">
+        <label for="">Nome</label>
+        {{ userform.name }}
+    </div>
+
+    <div class="form-group">
+        <label for="">CPF</label>
+        {{ userform.identity }}
+    </div>
+    <div class="form-group">
+        <label for="">Email</label>
+        {{ userform.email}}
+    </div>
+    <div class="form-group">
+        <label for="">Senha</label>
+        {{ userform.password}}
+    </div>
+    <div class="form-group">
+        <label for="">Endereço</label>
+    </div>
+
+    <div class="form-group">
+        <label for="">País</label>
+        {{ userform.country}}
+    </div>
+    <div class="form-group">
+        <label for="">Estado</label>
+        {{ userform.state}}
+    </div>
+    <div class="form-group">
+        <label for="">Rua</label>
+        {{ userform.street}}
+    </div>
+    <div class="form-group">
+        <label for="">Número</label>
+        {{ userform.number}}
+    </div>
+    <div class="form-group">
+        <label for="">Complemento</label>
+        {{ userform.reference}}
+    </div>
+    <button type="submit" class="btn btn-primary">Cadastrar</button>
+</form>
+{% endblock %}
