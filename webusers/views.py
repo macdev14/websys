@@ -90,10 +90,10 @@ def register(request):
             errors = userform.errors.as_json()
             errors = json.loads(errors)
             for message in errors:
-                print(message)
+               
                 messages.add_message(request, messages.INFO, message + ': '+ errors[message][0]['message'])
             if not errors:
-                print('here')
+               
                 username, email, password, number, identity, street, country = request.POST['name'], request.POST['email'], request.POST['password'], request.POST['number'], request.POST['identity'], request.POST['street'], request.POST['country']
                 try:
                     user = User.objects.create_user(username=userform['email'].data, email=userform['email'].data, password=userform['password'].data, number=userform['number'].data)
@@ -102,16 +102,16 @@ def register(request):
                     user.street=userform['street'].data
                     user.country=userform['country'].data
                     user.state=userform['state'].data
-                    print(password)
+              
                     user.save()
                     login(request, user)
                     return redirect('index')
                 except IntegrityError as e:
-                    print(e)
+                   
                     messages.add_message(request, messages.INFO, 'Conta já existente.')
                 
         except Exception as e:
-            print(e)
+           
             messages.add_message(request, messages.INFO, 'Erro ao cadastrar.')
             pass
         
@@ -125,7 +125,7 @@ def login_view(request):
         # Attempt to sign user in
         username = request.POST["email"]
         password = request.POST["password"]
-        print(password)
+      
         user = authenticate(request, username=username, password=password)
         
 
@@ -158,40 +158,40 @@ def delete_account(request):
 def mydata(request):
     current_user = request.user
     userid = current_user.id
-    print(userid)
+    
     user = None
     if not userid:
         return redirect('index')
     if User.objects.filter(pk=userid).exists():
-        print('Exists')
+     
         user = User.objects.get(pk=userid)
     if request.method =='POST':
         form = UserForm(request.POST, instance=user)
-        print(form.errors.as_json())
+       
         errors = form.errors.as_json()
         errors = json.loads(errors)
         for message in errors:
-            print(message)
+          
             messages.add_message(request, messages.INFO, message + ': '+ errors[message][0]['message'])
         
         
         if form.is_valid() and user:
             user.set_password(form['password'].data)
-            print(form['password'].data)
+           
             try:
                 user.save()
-                print(f"check if pass exists: {user.check_password('1234')}")
+               
                 form.save()
             except IntegrityError as e:
-                print(e)
+            
                 messages.add_message(request, messages.INFO, 'Nome / Senha existentes.')
            
             
             
-            print("I'm being saved")
+      
            
             userauth = authenticate(request, username=form['email'].data, password='1234')
-            print(f'Userauth {userauth}')
+          
             if userauth:
                 login(request, userauth)
                 messages.success(request, 'Perfil atualizado com sucesso.')
