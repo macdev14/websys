@@ -112,7 +112,7 @@ def register(request):
                     messages.add_message(request, messages.INFO, 'Conta já existente.')
                 
         except Exception as e:
-           
+            print(e)
             messages.add_message(request, messages.INFO, 'Erro ao cadastrar.')
             pass
         
