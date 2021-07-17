@@ -175,8 +175,8 @@ USE_L10N = True
 
 USE_TZ = True
 
-SECURE_PROXY_SSL_HEADER =  ('HTTP_X_FORWARDED_PROTO', 'https') if not DEBUG else None
-SECURE_SSL_REDIRECT = True if not DEBUG else None
+SECURE_PROXY_SSL_HEADER =  None if DEBUG else ('HTTP_X_FORWARDED_PROTO', 'https') 
+SECURE_SSL_REDIRECT =  False if DEBUG else True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
