@@ -11,6 +11,39 @@ from django.contrib.auth.forms import PasswordChangeForm
 from .models import *
 import json
 
+class AlterUserForm(forms.ModelForm):
+    fields = [
+        "name",
+        "email",
+        "identity",
+        "pis",
+        "country",
+        "state",
+        "city",
+        'street',
+        "number",
+        "reference"
+    ]
+    
+    def __init__(self, *args, **kwargs):
+        super(AlterUserForm, self).__init__(*args, **kwargs)
+        for visible in self.visible_fields():
+            visible.field.widget.attrs['class'] = 'form-control'
+    
+    class Meta:
+        model = User
+        fields = [
+        "name",
+        "email",
+        "identity",
+        "pis",
+        "country",
+        "state",
+        "city",
+        'street',
+        "number",
+        "reference"
+    ]
 
 
 class UserForm(forms.ModelForm):
@@ -18,6 +51,7 @@ class UserForm(forms.ModelForm):
         "name",
         "email",
         "identity",
+        "pis",
         "country",
         "state",
         "city",
@@ -53,31 +87,13 @@ class UpdatePassword(PasswordChangeView):
 
 class UserUpdateView(UpdateView):
     model = User
-   
-    form_class = UserForm
+    form_class = AlterUserForm
     template_name_suffix = '_update_form'
     success_url ="/"
     def get_object(self):
         return User.objects.get(pk=self.request.user.id) # or request.POST
     
 
-
-class RegisterForm(forms.ModelForm):
-    address = forms.CharField(widget = forms.HiddenInput(), required = False)
-    password = forms.CharField(widget=forms.PasswordInput)
-    reference = forms.CharField(required=False)
-    date_joined = forms.CharField(widget = forms.HiddenInput(), required = False)
-    username = forms.CharField(widget = forms.HiddenInput(), required = False)
-    password = forms.CharField(widget = forms.HiddenInput(), required = False)
-    
-    def __init__(self, *args, **kwargs):
-        super(UserForm, self).__init__(*args, **kwargs)
-        for visible in self.visible_fields():
-            visible.field.widget.attrs['class'] = 'form-control'
-    
-    class Meta:
-        model = User
-        fields = '__all__'
 
 
 
@@ -95,9 +111,9 @@ def register(request):
                 messages.add_message(request, messages.INFO, message + ': '+ errors[message][0]['message'])
             if not errors:
                
-                username, email, password, number, identity, street, country = request.POST['name'], request.POST['email'], request.POST['password'], request.POST['number'], request.POST['identity'], request.POST['street'], request.POST['country']
+               
                 try:
-                    user = User.objects.create_user(username=userform['email'].data, email=userform['email'].data, password=userform['password'].data, number=userform['number'].data)
+                    user = User.objects.create_user(email=userform['email'].data, password=userform['password'].data, number=userform['number'].data)
                     user.name=userform['name'].data
                     user.identity=userform['identity'].data 
                     user.street=userform['street'].data

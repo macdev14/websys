@@ -29,7 +29,7 @@ SECRET_KEY = env('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env('DEBUG')
 
-ALLOWED_HOSTS = ['websysm.herokuapp.com', 'localhost:8000']
+ALLOWED_HOSTS = ['websysm.herokuapp.com', 'localhost']
 
 AUTH_USER_MODEL = 'webusers.User'
 # Application definition
