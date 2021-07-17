@@ -1,6 +1,7 @@
 from typing import AbstractSet
 from django.db import models
 from django.contrib.auth.models import AbstractBaseUser
+from django.contrib.auth import UserManager
 from django.utils.translation import ugettext_lazy as _
 from localflavor.br.models import BRCPFField, BRCNPJField, BRPostalCodeField, BRStateField
 # Create your models here.
@@ -16,7 +17,7 @@ class Address(models.Model):
     reference = models.CharField(_("Complemento"),  blank=True, null=True, max_length=10000)
 '''
 class User(AbstractBaseUser):
-    
+    objects =  UserManager()
     name = models.CharField(_("Nome"), max_length=254)
     identity = BRCPFField(_("CPF"))
     email = models.EmailField(max_length=254, unique=True)
