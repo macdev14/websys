@@ -24,6 +24,7 @@ class UserForm(forms.ModelForm):
         'street',
         "number"
     ]
+    password = forms.CharField(widget=forms.PasswordInput)
     def __init__(self, *args, **kwargs):
         super(UserForm, self).__init__(*args, **kwargs)
         for visible in self.visible_fields():
