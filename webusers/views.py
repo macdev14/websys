@@ -119,7 +119,7 @@ def register(request):
                     user.street=userform['street'].data
                     user.country=userform['country'].data
                     user.state=userform['state'].data
-              
+                    user.pis=userform['pis'].data
                     user.save()
                     login(request, user)
                     return redirect('index')
