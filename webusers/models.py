@@ -53,3 +53,5 @@ class User(AbstractBaseUser):
     reference = models.CharField(_("Complemento"), blank=True, default='', max_length=10000)
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = ['name']
+    class Meta:
+        verbose_name=_("Usuário")

@@ -23,21 +23,28 @@ from webusers.models import User
 from rest_framework import routers, serializers, viewsets, permissions
 from rest_framework.permissions import IsAuthenticated
 from django.contrib.auth import get_user_model
+from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
 
 UserModel = get_user_model()
 
+class MyTokenObtainPairSerializer(TokenObtainPairSerializer):
+    def validate(self, attrs):
+        data = super().validate(attrs)
+        refresh = self.get_token(self.user)
+        data['refresh'] = str(refresh)
+        data['access'] = str(refresh.access_token)
+        # Add extra responses here
+        data['name'] = self.user.name
+        return data
+
+
 class UserSerializer(serializers.ModelSerializer):
     password = serializers.CharField(write_only=True)
-    country = serializers.CharField(allow_blank=True, required=False)
-    state = serializers.CharField(allow_blank=True, required=False)
-    city = serializers.CharField(allow_blank=True, required=False)
-    street = serializers.CharField(allow_blank=True, required=False)
     def create(self, validated_data):
         print(validated_data)
         user = UserModel.objects.create_user(
             name=validated_data['name'],
             email=validated_data['email'],
-            username=validated_data['email'],
             password=validated_data['password'],
             identity=validated_data['identity'],
             country=validated_data['country'],
@@ -48,7 +55,12 @@ class UserSerializer(serializers.ModelSerializer):
         )
       
         return user
-    
+    def update(self, instance, validated_data):
+        super(UserSerializer, self).update(instance, validated_data)
+        user = User.objects.get(pk=self.context['request'].user.id)
+        user.set_password(validated_data['password'])
+        user.save()
+        return user
     class Meta:
         model = UserModel
         fields = ['id', 'name','identity' ,'email', 'password', 'country', 'state', 'city', 'street', 'number']
@@ -65,16 +77,18 @@ class UserViewSet(viewsets.ModelViewSet):
     serializer_class = UserSerializer
 
 # Routers provide an easy way of automatically determining the URL conf.
-router = routers.DefaultRouter()
+router = routers.SimpleRouter()
 router.register(r'users', UserViewSet)
 
 
+class obtainToken(TokenObtainPairView):
+    serializer_class = MyTokenObtainPairSerializer
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('webusers.urls')),
     path('api/', include(router.urls)),
-    path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
+    path('api/token/', obtainToken.as_view(), name='token_obtain_pair'),
     path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 ]

@@ -29,7 +29,7 @@ SECRET_KEY = env('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env('DEBUG')
 
-ALLOWED_HOSTS = ['websysm.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['websysm.herokuapp.com', 'localhost', '127.0.0.1']
 
 AUTH_USER_MODEL = 'webusers.User'
 # Application definition
@@ -151,7 +151,11 @@ REST_FRAMEWORK = {
 'DEFAULT_AUTHENTICATION_CLASSES': [
       'rest_framework_simplejwt.authentication.JWTAuthentication',
      
-    ]
+    ],
+
+ 'DEFAULT_RENDERER_CLASSES': (
+        'rest_framework.renderers.JSONRenderer',
+    )
     
 }
 
@@ -175,8 +179,8 @@ USE_L10N = True
 
 USE_TZ = True
 
-SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https') 
-SECURE_SSL_REDIRECT =  True
+#SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https') 
+#SECURE_SSL_REDIRECT =  True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
