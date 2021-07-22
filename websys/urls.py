@@ -42,12 +42,11 @@ class MyTokenObtainPairSerializer(TokenObtainPairSerializer):
 class UserSerializer(serializers.ModelSerializer):
     password = serializers.CharField(write_only=True, required=False)
     def to_internal_value(self, data):
-        if data['password']:
-            return data
-        elif self.context['request'].method=='PUT':
+        
+        if self.context['request'].method=='PUT':
             return data
         else:
-            return super().validate(data) 
+            return super().to_internal_value(data) 
     def create(self, validated_data):
         
         user = UserModel.objects.create_user(
