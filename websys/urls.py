@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from rest_framework.exceptions import ValidationError
 from rest_framework_simplejwt.views import (
     TokenObtainPairView,
     TokenRefreshView,
@@ -24,7 +25,7 @@ from rest_framework import routers, serializers, viewsets, permissions
 from rest_framework.permissions import IsAuthenticated
 from django.contrib.auth import get_user_model
 from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
-
+import django.contrib.auth.password_validation as validators
 UserModel = get_user_model()
 
 class MyTokenObtainPairSerializer(TokenObtainPairSerializer):
@@ -39,9 +40,29 @@ class MyTokenObtainPairSerializer(TokenObtainPairSerializer):
 
 
 class UserSerializer(serializers.ModelSerializer):
-    password = serializers.CharField(write_only=True)
+    password = serializers.CharField(write_only=True, required=False)
+    def to_internal_value(self, data):
+        if data['password']:
+            return data
+        elif self.context['request'].method=='PUT':
+            return data
+        else:
+            return super().validate(data)
+       
+    def validate(self, data):
+       
+        if data['password']:
+            return data
+        elif self.context['request'].method=='PUT':
+            return data
+        else:
+            return super().validate(data)
+       
+       
+        
+  
     def create(self, validated_data):
-        print(validated_data)
+        
         user = UserModel.objects.create_user(
             name=validated_data['name'],
             email=validated_data['email'],
@@ -56,14 +77,28 @@ class UserSerializer(serializers.ModelSerializer):
       
         return user
     def update(self, instance, validated_data):
-        super(UserSerializer, self).update(instance, validated_data)
-        user = User.objects.get(pk=self.context['request'].user.id)
-        user.set_password(validated_data['password'])
-        user.save()
-        return user
+       
+        if  validated_data['password'] and validated_data['password'].strip():
+            super(UserSerializer, self).update(instance, validated_data)
+            instance.set_password(validated_data.get('password', instance.password))
+            instance.save()
+            return instance
+        if not validated_data['password']:
+            instance.name=validated_data.get('name', instance.name)
+            instance.email=validated_data.get('email', instance.email)
+            instance.identity=validated_data.get('identity', instance.identity)
+            instance.country=validated_data.get('country', instance.country)
+            instance.state=validated_data.get('state', instance.state)
+            instance.city=validated_data.get('city', instance.city)
+            instance.street=validated_data.get('street', instance.street)
+            instance.number=validated_data.get('number', instance.number)
+            instance.save()
+            return instance
+       
+        
     class Meta:
         model = UserModel
-        fields = ['id', 'name','identity' ,'email', 'password', 'country', 'state', 'city', 'street', 'number']
+        fields = ['id', 'name','identity' ,'email', 'country', 'password', 'state', 'city', 'street', 'number']
 
 # ViewSets define the view behavior.
 class UserViewSet(viewsets.ModelViewSet):
