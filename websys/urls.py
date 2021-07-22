@@ -47,20 +47,7 @@ class UserSerializer(serializers.ModelSerializer):
         elif self.context['request'].method=='PUT':
             return data
         else:
-            return super().validate(data)
-       
-    def validate(self, data):
-       
-        if data['password']:
-            return data
-        elif self.context['request'].method=='PUT':
-            return data
-        else:
-            return super().validate(data)
-       
-       
-        
-  
+            return super().validate(data) 
     def create(self, validated_data):
         
         user = UserModel.objects.create_user(
@@ -92,13 +79,14 @@ class UserSerializer(serializers.ModelSerializer):
             instance.city=validated_data.get('city', instance.city)
             instance.street=validated_data.get('street', instance.street)
             instance.number=validated_data.get('number', instance.number)
+            instance.pis=validated_data.get('pis', instance.pis)
             instance.save()
             return instance
        
         
     class Meta:
         model = UserModel
-        fields = ['id', 'name','identity' ,'email', 'country', 'password', 'state', 'city', 'street', 'number']
+        fields = ['id', 'name','identity' ,'email', 'pis', 'country', 'password', 'state', 'city', 'street', 'number']
 
 # ViewSets define the view behavior.
 class UserViewSet(viewsets.ModelViewSet):
