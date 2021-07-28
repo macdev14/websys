@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
+import sys
 import environ
 import dj_database_url
 import django_heroku
@@ -84,6 +85,8 @@ WSGI_APPLICATION = 'websys.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
+
+
 DATABASES = {
     'default': {
        'ENGINE': 'django.db.backends.postgresql_psycopg2',
@@ -94,6 +97,12 @@ DATABASES = {
         'PORT': env('PORT'),
     }
 }
+
+if 'test' in sys.argv:
+    DATABASES['default'] = {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'dbtest'
+    }
 
 
 
